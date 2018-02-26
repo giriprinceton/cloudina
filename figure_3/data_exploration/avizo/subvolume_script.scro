@@ -1,0 +1,269 @@
+# Amira-Script-Object v3.0
+
+$this script show
+
+$this proc constructor {} {
+  $this newPortFilename "Bounding Box Data"
+  $this newPortFilename "Oriented Slice Data"
+  $this newPortFilename "Spline Data"
+  # $this newPortConnection "LDA" HxUniformLabelField3
+  $this newPortConnection "LDA" HxVolumeDataObject
+  $this newPortRadioBox NoMask 2
+  # Mask use toggle here
+  $this NoMask setLabel "Use Mask"
+  $this NoMask setLabel 0 "Yes"
+  $this NoMask setLabel 1 "No"
+  $this newPortButtonList Calculate 1
+  $this Calculate setLabel 0 "Apply"
+}
+
+$this proc compute {} {
+
+  if { ![$this Calculate wasHit 0] } {
+    return
+  }
+
+  # Set bb_csv variable
+  set bb_csv [$this "Bounding Box Data" getValue]
+
+  # Set oriented_csv variable
+  set oriented_csv [$this "Oriented Slice Data" getValue]
+
+  # Set spline_csv variable
+  set spline_csv [$this "Spline Data" getValue]
+
+  # Set use mask variable
+
+  set no_mask_use [$this NoMask getValue]
+
+  # VARIBALE CHECKS
+
+  # error message strings
+  set csv_error_string "Please enter only valid csv filenames!"
+
+  # Check to see if this is a valid file name
+  if {($bb_csv == "" || [file extension $bb_csv] != ".csv") || ($oriented_csv == "" || [file extension $oriented_csv] != ".csv") || ($spline_csv == "" || [file extension $spline_csv] != ".csv")} {
+    echo $csv_error_string
+    return
+  }
+  # Now, see if we can read the input file - turn this into a function
+  if { [file readable $bb_csv] == 0 } {
+    echo "Error: unable to read file \"$bb_csv\""
+    return
+  }
+  if { [file readable $oriented_csv] == 0} {
+    echo "Error: unable to read file \"$oriented_csv\""
+  }
+  # Check that LDA has a value
+  set LDA [$this "LDA" source]
+  if { $LDA == "" } {
+    echo "Please connect to a data object"
+    return
+  }
+
+  # ONWARDS
+
+  # First, let's open the bounding box file
+  set fp [open $bb_csv "r"]
+  # Read the data
+  set bb_data [read $fp]
+  # Close the file
+  close $fp
+
+  # Split the bounding file data into lines
+  set bb_lines [split $bb_data "\n"]
+
+  # The first line tells us the name of this rectangle
+  set first_line [ lindex $bb_lines 0]
+
+  # Set name
+  set name_scan [scan $first_line "%s" name]
+
+  # Ensure that we got the right thing for name
+
+  if { $name_scan != 1 } {
+    echo "Name format did not match specifications, exiting!"
+    return
+  }
+
+  # The second line of bb_lines contains the information we want for the bounding box
+  set second_line [ lindex $bb_lines 1 ]
+
+  # Scan
+  set scanned [scan $second_line "%i,%i,%i,%i,%i,%i" x1 x2 y1 y2 z1 z2]
+
+  # Ensure that the line format match what is expected
+  if { $scanned != 6 } {
+    echo "Bounding box format did not match specifications, exiting!"
+    return
+  }
+
+  # Now, create an empty subvolume dialog
+  set subvolume [create HxLatticeAccess]
+
+  # Connect LDA data
+  $subvolume data connect $LDA
+
+  # Set starting values
+  # Note the need to fire after making changes
+  $subvolume boxMin setValues $x1 $y1 $z1
+  $subvolume fire
+  # Set box size values
+  set x_size [ expr $x2 - $x1 + 1 ]
+  set y_size [ expr $y2 - $y1 + 1 ]
+  set z_size [ expr $z2 - $z1 + 1 ]
+
+  # Set box size
+  $subvolume boxSize setValues $x_size $y_size $z_size
+  $subvolume fire
+
+  # Extract the Subvolume!
+  $subvolume action hit
+  $subvolume fire
+
+  # Get the result
+  set created_sub [ $subvolume getResult ]
+  set created_bb [ $created_sub getBoundingBox ]
+
+  if {$no_mask_use == 0} {
+
+    # Now, let's load the MATLAB Calculus Module
+    set calc_mod [create HxCalculus]
+
+    # Connect the subvolume 
+    $calc_mod data connect $created_sub
+
+    # Check the lattice as struct option
+    $calc_mod Options setValue 1 1
+
+    # Well, this sucks but we're going to have to do this all inline
+    $calc_mod MatlabBuffer setValue "load('I:/Reconstruction/MATLAB/avizo_mask.mat'); number_slices = size(field.data, 3); multiple_mask = uint8(repmat(avizo_mask\', \[1, 1, number_slices\])); masking = field; masking.data = immultiply(masking.data, multiple_mask); masking.name = \'cropped\'; clear number_slices; clear avizo_mask; clear field; clear multiple_mask;"
+
+    # Run calc_mod
+    $calc_mod Execute touch
+    $calc_mod fire
+
+    set cropped [$calc_mod getResult 1]
+  
+  }
+
+  ## ORIENTED SLICES ##
+
+  # First, let's open the xy/normal files
+  set oriented_fp [open $oriented_csv "r"]
+  # Read the data
+  set oriented_data [read $oriented_fp]
+  # Close the file
+  close $oriented_fp
+
+  # Split the oriented file data into lines
+  set oriented_lines [split $oriented_data "\n"]
+
+  # Get a count of lines - we have to subtract one here because of the way that split works
+  set num_oriented [expr [llength $oriented_lines] - 1]
+
+  # Okay, we also want to define a format string
+  # This format string is: int int int (x, y, z pixel locations) and float float float
+  set format_string "%f,%f,%f,%f,%f,%f"
+
+  # Loop through all the (VALID) lines
+
+  # But before we do, let's create an extract image 
+
+  set 2D_image [create HxCreateImage]  
+
+  for {set i 0} {$i < $num_oriented} {incr i} {
+    # First, scan
+
+    echo [lindex $oriented_lines $i]
+
+    scan [lindex $oriented_lines $i] $format_string x y z n_x n_y n_z
+      # Now, produce a slice module
+      set slice [create HxFilteredObliqueSlice [concat "slice" $i]]
+      # Connect cropped data
+      if {$no_mask_use == 0} {
+        $slice data connect $cropped
+      } else {
+        $slice data connect $created_sub
+      }
+      # Now, set plane and fire
+      $slice options setValue 4 1
+      $slice fire
+      # Touch plane normal
+      $slice planeNormal touch
+      # Set plane normal values
+      $slice planeNormal setValue 0 $n_x
+      $slice planeNormal setValue 1 $n_y
+      $slice planeNormal setValue 2 $n_z    
+      # Touch plane point
+      $slice planePoint1 touch
+      # Set the plane point value
+      $slice planePoint1 setValue $x $y $z
+      # Fire
+      $slice fire
+      # Now, connect that slice to 3D_image
+      $2D_image data connect $slice
+      # Fire
+      $2D_image fire
+      # Set result
+      set produced_image [$2D_image getResult]
+      # And save
+      $produced_image save "2D Tiff" [concat $name $i ".tif"]
+      # Remove the produced image
+      remove $produced_image
+  }
+
+  # Remove the 2D_image module
+  remove $2D_image
+  
+  # SPLINE DATA
+
+  # First, let's open the spline file
+
+  set fp [open $spline_csv "r"]
+
+  # Read the data
+
+  set spline_data [read $fp]
+  
+  # Close the file
+  close $fp
+
+  # Split the spline file data into lines
+  set spline_lines [split $spline_data "\n"]
+
+  # Get a count of lines - we have to subtract one here because of the way that split works
+  set num_points [expr [llength $spline_lines] - 1]
+
+  # Okay, we also want to define a format string
+  # This format string is: float float float
+  set spline_format_string "%f,%f,%f"
+
+  # Create a spline
+
+  set created_spline [create HxLineSet "Generated Spline"]
+
+  for {set i 0} {$i < $num_points} {incr i} {
+
+    scan [lindex $spline_lines $i] $spline_format_string x y z
+
+    set this_point [$created_spline addPoint $x $y $z]
+
+    if {$i == 0} {
+      $created_spline addLine $this_point
+    }
+
+    if {$i > 0} {
+      $created_spline addLineVertex 0 $this_point $i
+    }
+
+  }
+
+  set line_view [create HxDisplayLineSet]
+
+  $line_view data connect $created_spline
+
+  $line_view fire
+
+
+}

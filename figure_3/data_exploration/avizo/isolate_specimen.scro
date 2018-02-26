@@ -1,0 +1,97 @@
+# Amira-Script-Object v3.0
+
+$this script show
+
+$this proc constructor {} {
+  $this newPortFilename "Subvolume Information"
+  # $this newPortConnection "LDA" HxVolumeDataObject
+   $this newPortConnection "LDA" HxUniformLabelField3
+  $this newPortConnection "Mask" HxUniformScalarField3
+  $this newPortButtonList Calculate 1
+  $this Calculate setLabel 0 "Apply"
+}
+
+$this proc compute {} {
+
+  if { ![$this Calculate wasHit 0] } {
+    return
+  }
+
+  # Set bb_csv variable
+  set bb_csv [$this "Subvolume Information" getValue]
+
+  # error message strings
+  set csv_error_string "Please enter only valid csv filenames!"
+
+  # Check to see if this is a valid file name
+  if {($bb_csv == "" || [file extension $bb_csv] != ".csv")} {
+    echo $csv_error_string
+    return
+  }
+  # Check that LDA has a value
+  set LDA [$this "LDA" source]
+  if { $LDA == "" } {
+    echo "Please connect to a data object"
+    return
+  }
+  # Also that Mask has a value
+  set mask [$this "Mask" source]
+  if { $mask == "" } {
+    echo "Please connect to to a mask object"
+    return
+  }
+
+  # Now, see if we can read the input file - turn this into a function
+  if { [file readable $bb_csv] == 0 } {
+    echo "Error: unable to read file \"$bb_csv\""
+    return
+  }
+
+  # First, let's open the bounding box file
+  set fp [open $bb_csv "r"]
+  # Read the data
+  set bb_data [read $fp]
+  # Close the file
+  close $fp
+
+  # Split the bounding file data into lines
+  set bb_lines [split $bb_data "\n"]
+
+  # The first line of bb_lines contains the information we want for the bounding box
+  set first_line [ lindex $bb_lines 0 ]
+
+  # Scan
+  set scanned [scan $first_line "%i,%i,%i,%i,%i,%i" x1 x2 y1 y2 z1 z2]
+
+  # Ensure that the line format match what is expected
+  if { $scanned != 6 } {
+    echo "Bounding box format did not match specifications, exiting!"
+    return
+  }
+
+  # Now, create an empty subvolume dialog
+  set subvolume [create HxLatticeAccess]
+
+  # Connect LDA data
+  $subvolume data connect $LDA
+
+  # Set starting values
+  # Note the need to fire after making changes
+  $subvolume boxMin setValues $x1 $y1 $z1
+  $subvolume fire
+  # Set box size values
+  set x_size [ expr $x2 - $x1 + 1 ]
+  set y_size [ expr $y2 - $y1 + 1 ]
+  set z_size [ expr $z2 - $z1 + 1 ]
+
+  # Set box size
+  $subvolume boxSize setValues $x_size $y_size $z_size
+  $subvolume fire
+
+  # Extract the Subvolume!
+  $subvolume action hit
+  $subvolume fire
+
+  # Now, let's move the 
+
+}
