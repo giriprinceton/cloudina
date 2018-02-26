@@ -1,0 +1,108 @@
+Name,Slice,Inner Major Axis,Inner Minor Axis,Outer Major Axis,Outer Minor Axis,Notes,Moved,Moved To
+rect_000000,3,2439,1289,4954,4154,Moved to 82,TRUE,82
+rect_000000,2,2397,2356,5270,4158,A great deal of skeltal material or debris around the tube,FALSE,
+rect_000000,1,2402,1850,5310,4538,,FALSE,
+rect_000000,0,2696,2636,5289,5169,,FALSE,
+rect_000002,3,2486,2202,3646,2989,,FALSE,
+rect_000002,2,2490,2486,3998,3116,,FALSE,
+rect_000002,1,2929,2803,4447,3636,Moved to 30,TRUE,30
+rect_000002,0,3061,2819,4366,3863,,FALSE,
+rect_000004,3,2372,2077,4215,3696,rect_000003 was not well oriented. Note that this tube bulges and gets fat in certain points. Moved to 75,TRUE,75
+rect_000004,2,2544,1735,4171,4127,,FALSE,
+rect_000004,1,3199,2396,4349,4160,,FALSE,
+rect_000004,0,2929,2911,4582,3903,Moved to 15,TRUE,15
+rect_000006,3,2008,1824,2995,2552,Moved to 70,TRUE,70
+rect_000006,2,1837,1827,3707,3232,,FALSE,
+rect_000006,1,1961,1849,3312,2982,,FALSE,
+rect_000006,0,2282,1343,3030,2534,Moved slice 0 to 32,TRUE,32
+rect_000007,3,1503,1265,2409,1763,"Another short, sharply dipping fragment",FALSE,
+rect_000007,2,1289,1139,2109,1820,,FALSE,
+rect_000007,1,1613,1056,2146,1828,,FALSE,
+rect_000007,0,1526,1442,2065,2015,,FALSE,
+rect_000008,3,627,587,1351,1102,Moved to 75. this tube bends suddenly (much like one seen in I130). Note how much smaller this tube is than others.,TRUE,75
+rect_000008,2,767,747,1393,1185,,FALSE,
+rect_000008,1,988,808,1610,1316,,FALSE,
+rect_000008,0,878,844,1749,1271,Moved to 10,TRUE,10
+rect_000010,3,2660,1793,3245,2276,"broken, surrounded by detritus; moved to 75; circle at end",FALSE,
+rect_000010,2,2563,2028,3498,2694,moved to 58,TRUE,58
+rect_000010,1,2008,1861,3053,2291,Moved to 38.5,TRUE,38.5
+rect_000010,0,2011,1630,3228,2208,,FALSE,
+rect_000011,3,2346,1317,5240,4707,,FALSE,
+rect_000011,2,2248,1672,4515,4168,inferred outer boundary,FALSE,
+rect_000011,1,2078,1989,4853,4421,Moved to 50,TRUE,50
+rect_000011,0,2500,1663,4592,4066,Moved to 25 - nousy!,TRUE,25
+rect_000012,3,1414,930,2219,1872,"Broken shell, so measurements are inferred",FALSE,
+rect_000012,2,1069,955,2057,1701,,FALSE,
+rect_000012,1,1177,706,1890,1803,,FALSE,
+rect_000012,0,894,479,1637,1553,Weird elongated shape -> cut by microbial layer! Saved! ,FALSE,
+rect_000013,3,1614,1410,2381,2087,Moved to 95,TRUE,95
+rect_000013,2,1483,1473,1947,1757,Moved to 73,TRUE,73
+rect_000013,0,1338,1071,1905,1554,Incomplete segmentation; moved to 5,FALSE,
+rect_000014,3,707,572,1620,1480,Look at this shape! Asymmetrical! Weirdly closed off - saved,FALSE,
+rect_000014,2,869,647,1606,1214,Moved to 70,TRUE,70
+rect_000014,1,896,733,1400,1309,,FALSE,
+rect_000014,0,1087,937,1682,1411,,FALSE,
+rect_000015,3,1911,1790,2570,2356,"Broken, short fragment",FALSE,
+rect_000015,2,1803,1666,2382,2160,,FALSE,
+rect_000015,1,1506,1456,2195,2105,,FALSE,
+rect_000015,0,1526,1519,2249,2200,Moved to 35,TRUE,35
+rect_000016,3,2229,1082,3175,2923,Filled - look at this cross section,FALSE,
+rect_000016,2,2007,884,3808,3468,Moved to 65,TRUE,65
+rect_000016,1,2462,1794,3958,3121,,FALSE,
+rect_000016,0,2952,2509,3891,3452,Moved to 15,TRUE,15
+rect_000017,3,2894,2543,5116,4173,"double cavity, appears to be external layering, not branching. Inner cavity measured as 3b. External major axis measured to outside of double cavity",FALSE,
+rect_000017,2,2267,2048,3950,3459,No double cavity,FALSE,
+rect_000017,1,2140,2048,4571,3911,"Moved to 30, cross section looks like nama!",TRUE,30
+rect_000017,0,2195,2063,4164,3988,,FALSE,
+rect_000018,3,1797,1463,5120,3932,double cavity apparent; moved to 83,TRUE,83
+rect_000018,2,1936,1799,4344,3850,"No double cavity, but external ornamentation",FALSE,
+rect_000018,1,2695,1873,4661,4114,Moved to 38,TRUE,38
+rect_000018,0,2953,2474,4888,3630,Broken shell,FALSE,
+rect_000019,0,3233,2450,3795,2926,"Note external ""collar"". 0c measured to outside of collar",FALSE,
+rect_000019,1,3557,2125,4692,3617,,FALSE,
+rect_000019,2,3409,2575,4423,3599,Moved to 50. 2c to outside collar,TRUE,50
+rect_000019,3,3344,2422,4415,3881,,FALSE,
+rect_000021,3,1528,1421,3771,2679,Moved to 58,TRUE,58
+rect_000021,2,1544,1484,3984,2885,Moved to 50,TRUE,50
+rect_000021,1,1479,1258,3709,2798,,FALSE,
+rect_000021,0,1526,1266,3996,2913,Moved to 23,TRUE,23
+rect_000022,3,1342,1014,1923,1443,Broken shell,FALSE,
+rect_000022,2,1290,715,2019,1219,Broken shell,FALSE,
+rect_000022,1,1264,1027,2470,1797,,FALSE,
+rect_000022,0,1512,1180,2899,2170,"Moved to 30. Becomes much larger - also, cross section shows the issue with apical ends, so saved!",TRUE,30
+rect_000024,3,1381,1069,2935,2503,"Two cavities, 3b is measurement",FALSE,
+rect_000024,2,1068,608,2803,2238,"Two cavities, 2b inner major is inferred because of broken shell. So strange, also saved",FALSE,
+rect_000024,1,1162,851,3482,2667,Moved to 32,TRUE,32
+rect_000024,0,1812,877,3369,3108,Moved to 8,TRUE,8
+rect_000025,3,1945,1859,4164,3163,"Cut off, so everything has to be moved; moved to 33; note that slice 3 is last in this measurement",FALSE,
+rect_000025,2,1994,1787,4118,2981,"Moved to 30, note inner shell/split",TRUE,30
+rect_000025,1,2070,1695,4516,3373,Moved to 25,TRUE,25
+rect_000025,0,2102,1975,4265,3663,,FALSE,
+rect_000026,3,3390,2428,5238,4193,Moved to 85,TRUE,85
+rect_000026,2,3346,2624,5254,4089,Moved to 80,TRUE,80
+rect_000026,1,3351,1770,5206,3851,Moved to 65,TRUE,65
+rect_000026,0,3622,2819,5325,4021,Moved to 45,TRUE,45
+rect_000027,3,1128,1059,2637,2229,Moved to 90,TRUE,90
+rect_000027,2,1092,642,2871,2381,Moved to 50,TRUE,50
+rect_000027,1,1057,903,2581,2065,,FALSE,
+rect_000027,0,2535,1654,3179,2486,Moved to 0,TRUE,0
+rect_000028,3,,,2683,1832,"Multiple inner cavities, so not measured - what's going on with this? Strange model - reexamine",FALSE,
+rect_000028,2,,,2555,2057,,FALSE,
+rect_000028,1,1992,878,2862,2125,Cavity max dimensions measured,FALSE,
+rect_000028,0,,,3273,2348,,FALSE,
+rect_000029,3,1027,713,1611,1356,,FALSE,
+rect_000029,2,1148,914,1777,1299,,FALSE,
+rect_000029,1,1220,847,1767,1324,,FALSE,
+rect_000029,0,1095,714,1665,1280,,FALSE,
+rect_000030,3,2093,1461,2906,2354,Moved to 75,TRUE,75
+rect_000030,2,1663,1369,2837,2438,,FALSE,
+rect_000030,1,1568,1360,2421,2210,,FALSE,
+rect_000030,0,1420,1315,2484,2077,Moved to 15,TRUE,15
+rect_000031,3,1261,594,4037,3813,Asymmetrical -> secondary fill,FALSE,
+rect_000031,2,1285,675,4510,3957,,FALSE,
+rect_000031,1,1633,986,4218,3489,,FALSE,
+rect_000031,0,2165,1820,4336,3545,,FALSE,
+rect_000033,3,2536,2172,5293,3733,Moved to 65,TRUE,65
+rect_000033,2,2593,2156,5317,3747,,FALSE,
+rect_000033,1,3741,2461,5488,3423,,FALSE,
+rect_000033,0,3412,2500,5505,3227,Moved to 45,TRUE,45

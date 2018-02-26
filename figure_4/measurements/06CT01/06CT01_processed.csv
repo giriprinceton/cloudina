@@ -1,0 +1,117 @@
+Name,Slice,Inner Major Axis,Inner Minor Axis,Outer Major Axis,Outer Minor Axis,Notes,Moved,Moved To
+rect_000000,3,2679,2671,5390,5085,,FALSE,
+rect_000000,2,3026,2487,5443,4531,,FALSE,
+rect_000000,1,2404,1977,5696,3784,Note asymmetric cross section,FALSE,
+rect_000000,0,3465,2150,5053,4152,Implied outer and inner axis;moved to 21; also an asymmetric cross section -> MODEL THIS TUBE!,TRUE,21
+rect_000002,3,2294,1704,4564,3382,Moved to 55,TRUE,55
+rect_000002,2,1737,1718,3908,3597,Moved to 50,TRUE,50
+rect_000002,1,3227,2050,4459,3227,,FALSE,
+rect_000002,0,2320,1911,4379,3205,Moved to 30,TRUE,30
+rect_000003,3,4893,4199,5413,5106,Extremely thin walls -> outer and inner diameters inferred,FALSE,
+rect_000003,2,4184,3347,5928,4357,,FALSE,
+rect_000003,1,3652,2866,5842,3884,Inner diameters inferred,FALSE,
+rect_000003,0,3199,2254,5399,3538,Moved to 18,TRUE,18
+rect_000004,3,2914,1981,4431,3004,,FALSE,
+rect_000004,2,2851,1913,3956,3115,Inferred -> calcite fill classification,FALSE,
+rect_000004,1,2158,2006,4175,3404,Moved to 37,TRUE,37
+rect_000004,0,2223,1930,4158,3624,,FALSE,
+rect_000005,3,2236,1190,3354,2101,Moved to 74 - minor outside inferred,TRUE,74
+rect_000005,2,2123,1568,3401,2702,Includes dolomite,FALSE,
+rect_000005,1,1816,1198,3276,2707,"Inferred outer dims, moved to 42",TRUE,42
+rect_000005,0,2105,1608,3650,2661,,FALSE,
+rect_000006,3,1509,1344,2899,2611,Strange internal fill! ,FALSE,
+rect_000006,2,1356,1322,3153,2671,Moved to 75,TRUE,75
+rect_000006,1,1537,1311,3088,2375,Moved to 70,TRUE,70
+rect_000006,0,1614,1350,2909,2358,Moved to 65,TRUE,65
+rect_000008,3,1788,1487,3714,3406,Moved to 88,TRUE,88
+rect_000008,2,1844,1692,3931,3139,,FALSE,
+rect_000008,1,1723,1428,3665,3252,Moved to 39,TRUE,39
+rect_000008,0,1625,930,3498,3210,Moved to 56; inferred minor outer axis,TRUE,56
+rect_000009,3,2150,1768,4811,4025,,FALSE,
+rect_000009,2,2480,1590,5123,3887,,FALSE,
+rect_000009,1,3514,2645,4911,3957,,FALSE,
+rect_000009,0,4161,2830,4944,4136,,FALSE,
+rect_000010,3,1151,1105,3981,3270,"Diffuse and shell overlap, so inferred from imagery. Inner values for secondary calcite fill. Moved to 75",TRUE,75
+rect_000010,2,1330,1056,4248,3408,,FALSE,
+rect_000010,1,1732,1333,4588,3211,Moved to 25,TRUE,25
+rect_000010,0,1735,1332,4606,3307,,FALSE,
+rect_000011,3,1327,1197,1992,1744,Effectively an inner tube cast (may explain small dimensions). Inner tube diameters are for secondary calcite fill classification - should be treated as only a cast,FALSE,
+rect_000011,2,1295,1224,2215,1746,Same,FALSE,
+rect_000011,1,,,2089,1800,"Only cast, classified as shell",FALSE,
+rect_000011,0,,,2299,1609,Same,FALSE,
+rect_000012,3,1533,1149,3298,2712,,FALSE,
+rect_000012,2,1502,1339,2729,2415,,FALSE,
+rect_000012,1,1517,1508,2728,2418,,FALSE,
+rect_000012,0,940,899,2543,2439,,FALSE,
+rect_000013,3,2326,1540,5190,3534,,TRUE,67
+rect_000013,2,2973,2161,5829,3339,,FALSE,
+rect_000013,1,3071,1893,5459,2898,,FALSE,
+rect_000013,0,3976,2568,5610,3235,,FALSE,
+rect_000014,3,2360,2144,4311,3637,,FALSE,
+rect_000014,2,2660,1895,4118,3591,,FALSE,
+rect_000014,1,2613,2255,4282,3846,,FALSE,
+rect_000014,0,3056,2662,4844,3832,Moved to 30,TRUE,30
+rect_000015,3,2561,2074,4138,3236,,FALSE,
+rect_000015,2,2564,1848,4661,3154,,FALSE,
+rect_000015,1,2110,925,4712,3483,Moved to 55,TRUE,55
+rect_000015,0,1413,989,4514,3929,Moved to 25,TRUE,25
+rect_000016,3,2007,1339,2963,2249,,TRUE,84
+rect_000016,2,1108,784,3250,2001,Note partial fill - issue with classification?,TRUE,65
+rect_000016,1,1376,1350,3154,2011,Same partial fill issue,TRUE,55
+rect_000016,0,1386,939,3251,2211,Repeated issue,TRUE,48
+rect_000017,3,3553,2323,5351,3899,Bisected what appeared to be an internal wall for inner measurement - revisit if necessary,TRUE,93
+rect_000017,2,1626,1602,5082,3869,Top major axis outer inferred,TRUE,85
+rect_000017,1,2269,1503,5092,3543,,TRUE,30
+rect_000017,0,2373,1274,4237,2745,Why is this so much smaller!?,TRUE,4
+rect_000018,3,3851,1609,5670,3682,Really interesting shape -> reconstruct and demonstrate,TRUE,95
+rect_000018,2,3476,1390,5034,3680,,TRUE,85
+rect_000018,1,3733,1779,5232,3567,,TRUE,80
+rect_000018,0,3716,1663,5049,3556,,TRUE,77
+rect_000019,3,3629,2474,4701,3257,,FALSE,
+rect_000019,2,2057,1866,4440,3482,Now totally filled with secondary calcite…DEFINITELY reconstruct this tube and produce a cross section,FALSE,
+rect_000019,1,1954,1924,4342,3469,,FALSE,
+rect_000019,0,2346,1870,4451,3525,Moved to 8,TRUE,8
+rect_000020,3,2864,1882,3707,2560,,TRUE,72
+rect_000020,2,1910,1309,4063,2949,,FALSE,
+rect_000020,1,1671,1354,4301,2772,,TRUE,30
+rect_000020,0,2425,1476,3867,2638,,TRUE,15
+rect_000021,3,3103,2557,5063,4528,"Filled with secondary calcite, so appears to have multiple cavities but not real",FALSE,
+rect_000021,2,2602,1878,5396,4672,,FALSE,
+rect_000021,1,2826,2640,5124,4794,,FALSE,
+rect_000021,0,3354,2593,5196,4283,,FALSE,
+rect_000022,3,3648,1888,5611,3183,,TRUE,75
+rect_000022,2,3372,2215,5479,3703,Staggered cross section - interesting - reconstruct this!,FALSE,
+rect_000022,1,3242,1574,5100,2904,,FALSE,
+rect_000022,0,2751,1744,4783,3054,,TRUE,25
+rect_000023,3,2629,1590,3196,2389,Thin walled ,TRUE,70
+rect_000023,2,2885,1845,3443,2653,,TRUE,62
+rect_000023,1,2848,2146,3571,2444,,TRUE,50
+rect_000023,0,2790,2421,3353,3058,,TRUE,15
+rect_000024,3,2413,2369,4612,3167,Had to move because of difficulty making out boundaries. Note that internal measurements bridge some inner wall,TRUE,35
+rect_000024,2,2104,1811,4883,3311,,TRUE,30
+rect_000024,1,1801,1205,4590,3481,,TRUE,20
+rect_000024,0,1721,1432,4612,3182,Partial filled inner wall,TRUE,15
+rect_000025,3,3209,2765,4232,3893,Moved to 75 - notice that there is some sort of inner wall?,TRUE,75
+rect_000025,2,3240,2825,4654,3770,,FALSE,
+rect_000025,1,2663,2160,4449,3349,,FALSE,
+rect_000025,0,2567,2493,4577,3357,,FALSE,
+rect_000026,3,1517,1315,4020,3462,"Long and sinuous, definitely reconstruct",FALSE,
+rect_000026,2,1249,1133,3879,3085,,FALSE,
+rect_000026,1,2084,1630,3720,2985,Moved to 35,TRUE,35
+rect_000026,0,1864,1743,3636,3179,,FALSE,
+rect_000027,3,3048,2513,4109,3604,,FALSE,
+rect_000027,2,3511,2547,4365,3199,,FALSE,
+rect_000027,1,3457,2447,4206,3304,Moved to 44,TRUE,44
+rect_000027,0,3589,2601,4478,3411,"Inferred, because of classification as secondary",FALSE,
+rect_000028,3,2245,1404,2926,1849,Moved to 75; circle at end,FALSE,
+rect_000028,2,2244,2090,3343,2472,,FALSE,
+rect_000028,1,2592,2180,3625,2820,,FALSE,
+rect_000028,0,2850,1895,3689,2529,,FALSE,
+rect_000029,3,2612,2155,3717,3579,,FALSE,
+rect_000029,2,2864,2159,3381,3350,,FALSE,
+rect_000029,1,2568,2239,3062,3036,,FALSE,
+rect_000029,0,2328,2258,3008,2946,,FALSE,
+rect_000030,3,2747,2365,4496,4670,Asymmetrical - secondary calcite? Moved to 75,FALSE,
+rect_000030,2,2554,1753,4747,4205,,FALSE,
+rect_000030,1,1622,1237,4510,4108,,FALSE,
+rect_000030,0,2632,1946,4537,3929,Moved to 25,FALSE,

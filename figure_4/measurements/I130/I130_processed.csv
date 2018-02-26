@@ -1,0 +1,121 @@
+Name,Slice,Inner Major Axis,Inner Minor Axis,Outer Major Axis,Outer Minor Axis,Notes,Moved,Moved To
+rect_000000,3,,,1341,781,Filled,FALSE,
+rect_000000,2,,,1202,884,Moved to 65,TRUE,65
+rect_000000,1,,,1046,807,Moved to 42,TRUE,42
+rect_000000,0,,,1203,892,Moved to 25,TRUE,25
+rect_000001,3,1659,1123,3001,2421,moved to 75. note asymmetrical cross section,TRUE,75
+rect_000001,2,2056,1326,3187,2539,"This thing is massive. Question, does the diameter change as you move through it?",FALSE,
+rect_000001,1,1528,1061,2834,2381,,FALSE,
+rect_000001,0,2057,1786,3183,2570,Possible branching here? Measured smaller of two apparent interiors,FALSE,
+rect_000003,3,2482,1710,3489,2201,Revisting rect_000002 - way better orientations. Note that the two slice 2 measurements are pretty close but the aspect ratio is .15 different,FALSE,
+rect_000003,2,1942,1435,3385,1866,,FALSE,
+rect_000003,1,2086,1581,3263,2079,,FALSE,
+rect_000003,0,1741,1485,3286,2025,,FALSE,
+rect_000004,3,,,966,675,Actually bends sharply! Collides with big tube. Saved model. Filled,FALSE,
+rect_000004,2,,,995,837,,FALSE,
+rect_000004,1,,,1003,954,,FALSE,
+rect_000004,0,,,1169,1022,,FALSE,
+rect_000005,3,,,1386,1067,Also filled. Clearly dipping.,FALSE,
+rect_000005,2,,,1127,1006,,FALSE,
+rect_000005,1,,,1180,834,,FALSE,
+rect_000005,0,417,261,1277,920,Small opening - asymmetrical tube,FALSE,
+rect_000006,3,429,211,1100,1003,Moved to 85,TRUE,85
+rect_000006,2,335,250,1152,1046,Moved to 65,TRUE,65
+rect_000006,1,,,1207,1064,Filled,FALSE,
+rect_000006,0,,,1245,1046,Moved to 18; filled,TRUE,18
+rect_000007,3,1816,1507,2629,2134,U shape!,FALSE,
+rect_000007,2,1639,1543,2880,2080,,FALSE,
+rect_000007,1,2238,1673,3320,2393,Moved to 45,TRUE,45
+rect_000007,0,1811,1442,3609,2658,Moved to 5,TRUE,5
+rect_000008,3,1584,1447,2442,2003,,FALSE,
+rect_000008,2,1087,969,2331,1742,,FALSE,
+rect_000008,1,973,942,2324,1665,,FALSE,
+rect_000008,0,1031,887,1927,1518,Moved to 9,FALSE,
+rect_000010,3,,,690,577,Moved to 85; tiny,TRUE,85
+rect_000010,2,,,701,608,Moved to 55,TRUE,55
+rect_000010,1,,,732,662,,FALSE,
+rect_000010,0,,,851,717,,FALSE,
+rect_000011,3,,,961,838,,FALSE,
+rect_000011,2,,,1183,969,,FALSE,
+rect_000011,1,,,1258,881,,FALSE,
+rect_000011,0,,,1196,1022,moved to 35,TRUE,35
+rect_000012,3,1473,1116,2672,1729,,FALSE,
+rect_000012,2,1287,812,2773,1706,,FALSE,
+rect_000012,1,1212,799,2595,1797,Moved to 44,TRUE,44
+rect_000012,0,1009,856,2308,1649,,FALSE,
+rect_000015,3,,,1147,992,rect_000013 and rect_000014 were busts,FALSE,
+rect_000015,2,,,1150,1102,implied edge on the minor axis,FALSE,
+rect_000015,1,,,1203,924,inner axis is negligible in terms of pixels,FALSE,
+rect_000015,0,420,318,907,827,,FALSE,
+rect_000016,3,457,183,980,883,,FALSE,
+rect_000016,2,,,940,864,inner axis is unclear,FALSE,
+rect_000016,1,402,60,879,865,,FALSE,
+rect_000016,0,466,93,1099,886,2 implied edges,FALSE,
+rect_000017,3,,,1364,1060,,FALSE,
+rect_000017,2,,,1181,810,,FALSE,
+rect_000017,1,,,995,965,,FALSE,
+rect_000017,0,,,1017,995,implied edge on major axis,FALSE,
+rect_000019,3,468,160,922,803,rect_000018 was a bust,FALSE,
+rect_000019,2,430,215,1092,866,inner tube is divided into 2. Larger part was used.,FALSE,
+rect_000019,1,531,242,1070,984,"implied outer edge, inner is slightly Y shaped, major axis is the longest length, minor is across the middle.",FALSE,
+rect_000019,0,468,166,1090,880,implied edges against another tube and along an opening.,FALSE,
+rect_000020,3,501,103,1354,1304,impied edge along another tube,FALSE,
+rect_000020,2,502,373,1260,1249,,FALSE,
+rect_000020,1,510,254,1405,1318,impied edge along another tube,FALSE,
+rect_000020,0,458,297,1134,962,implied edges against another tube and along an opening.,FALSE,
+rect_000021,3,,,1106,1005,implied edge,FALSE,
+rect_000021,2,,,1341,1038,,FALSE,
+rect_000021,1,425,290,1084,1028,,FALSE,
+rect_000021,0,776,506,1094,779,Implied minor axis outer edge along break,FALSE,
+rect_000022,3,,,1235,1099,,FALSE,
+rect_000022,2,395,71,1248,1110,,FALSE,
+rect_000022,1,381,215,1253,1094,,FALSE,
+rect_000022,0,522,110,965,938,,FALSE,
+rect_000023,3,1480,1361,2280,1960,Moved to 68. Saved - appears to be closed on one end! ALSO: second tube inside -> clearly detritial. DEFINITELY RECONSTRUCT,TRUE,68
+rect_000023,2,1534,1318,2173,2126,,FALSE,
+rect_000023,1,1878,1489,2273,2206,Inferred minor outer axis,FALSE,
+rect_000023,0,1596,948,2541,2434,Moved to 0,TRUE,0
+rect_000024,3,,,1038,973,Filled,FALSE,
+rect_000024,2,,,1172,1127,Effectively filled,FALSE,
+rect_000024,1,,,1041,952,Effectively filled,FALSE,
+rect_000024,0,404,213,1133,1011,"Moved to 15, small opening",TRUE,15
+rect_000025,3,1868,1622,2346,2077,"thin wallled; ridges, missiing parts of the wall",FALSE,
+rect_000025,2,1718,1516,2257,2149,,TRUE,67
+rect_000025,1,1885,1717,2262,1981,,TRUE,38
+rect_000025,0,1798,1715,2083,2092,,FALSE,
+rect_000026,3,,,961,733,filled; inferred because of connection,FALSE,
+rect_000026,2,,,938,846,Effectively filled,TRUE,55
+rect_000026,1,,,977,784,Effectively filled,TRUE,44
+rect_000026,0,,,874,814,,FALSE,
+rect_000027,3,238,175,991,741,effectively filled,FALSE,
+rect_000027,2,,,1049,910,,FALSE,
+rect_000027,1,,,985,902,,TRUE,30
+rect_000027,0,469,423,821,793,,TRUE,3
+rect_000028,3,,,1040,971,Filled,FALSE,
+rect_000028,2,,,1181,887,,TRUE,55
+rect_000028,1,,,1175,910,Also filled.,TRUE,42
+rect_000028,0,,,1174,859,,TRUE,23
+rect_000029,3,,,1247,1174,,TRUE,72
+rect_000029,2,,,1282,1089,,TRUE,54
+rect_000029,1,,,1270,1169,,TRUE,41
+rect_000029,0,,,1247,1179,,FALSE,
+rect_000030,3,2471,1813,3406,1979,"Large, broken shell. Outer major axis inferred. ",TRUE,81
+rect_000030,2,2298,1666,3861,2136,,TRUE,65
+rect_000030,1,2036,1560,3713,2150,,FALSE,
+rect_000030,0,1963,1864,2959,2240,,TRUE,17
+rect_000031,3,1347,1318,2542,2078,Thin top,FALSE,
+rect_000031,2,1318,1231,2299,1928,,TRUE,68
+rect_000031,1,1173,704,2302,1588,,FALSE,
+rect_000031,0,1175,629,2302,1356,,TRUE,34
+rect_000032,3,,,1380,1261,,FALSE,
+rect_000032,2,,,1565,1223,,FALSE,
+rect_000032,1,,,1113,1170,,FALSE,
+rect_000032,0,,,1295,1235,,FALSE,
+rect_000034,3,1487,985,2517,2157,,TRUE,85
+rect_000034,2,1541,848,2348,2292,,FALSE,
+rect_000034,1,1462,1007,2663,2098,,FALSE,
+rect_000034,0,1489,1369,2127,1957,,TRUE,14
+rect_000035,3,,,1098,945,,TRUE,95
+rect_000035,2,,,947,826,,TRUE,53
+rect_000035,1,,,1029,823,,FALSE,
+rect_000035,0,,,892,781,,TRUE,18

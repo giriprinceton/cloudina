@@ -1,0 +1,95 @@
+﻿Name,Slice,Inner Major Axis,Inner Minor Axis,Outer Major Axis,Outer Minor Axis,Notes,Moved?,Moved To
+rect_000000,0,2166,1612,3596,3227,Partially filled interior,FALSE,
+rect_000000,1,2054,1614,3485,3480,,FALSE,
+rect_000000,2,2302,2280,4183,3217,,FALSE,
+rect_000000,3,2599,2596,3924,3339,,FALSE,
+rect_000001,0,2008,1658,3751,3639,,FALSE,
+rect_000001,1,2024,1603,4035,3703,,FALSE,
+rect_000001,2,1968,1887,3748,3591,Moved to 65,TRUE,65
+rect_000001,3,2025,1971,3974,3621,Moved to 75,TRUE,75
+rect_000002,0,2777,2611,5170,4527,"Inferred edge, as tube lies next to another tube (headed in another direction)",FALSE,
+rect_000002,1,3457,2822,5106,3785,,FALSE,
+rect_000002,2,2953,1983,5307,4056,Moved to 65,TRUE,65
+rect_000002,3,2650,2522,5736,4367,Moved to 85; inferred boundaries,TRUE,85
+rect_000003,0,3155,1873,4873,4293,Moved to 27,TRUE,27
+rect_000003,1,3496,2212,5124,4719,,FALSE,
+rect_000003,2,3231,2757,5324,4272,,FALSE,
+rect_000003,3,3918,3534,4901,4710,"Inferred edge, at presence of dolomite",FALSE,
+rect_000004,0,1754,721,3666,2347,Largely filled interior,FALSE,
+rect_000004,1,1143,666,3306,2711,Largely filled interior,FALSE,
+rect_000004,2,1193,979,2943,2305,,FALSE,
+rect_000004,3,1597,1444,2653,1965,,FALSE,
+rect_000005,0,2082,2012,4193,3589,,FALSE,
+rect_000005,1,2099,1222,3436,3368,Inferred boundary,FALSE,
+rect_000005,2,2328,1743,3589,3266,,FALSE,
+rect_000005,3,1708,1550,3897,3559,,FALSE,
+rect_000006,0,1918,1517,4000,3327,Move to 10; largely filled interior,TRUE,10
+rect_000006,1,,,4362,3880,Moved to 36; filled,TRUE,36
+rect_000006,2,2040,1699,4185,3204,Inferred boundary,FALSE,
+rect_000006,3,2407,2020,4611,4029,,FALSE,
+rect_000007,0,3605,2336,5817,4443,Moved to 27,TRUE,27
+rect_000007,1,2999,2409,5416,4207,Moved to 32,TRUE,32
+rect_000007,2,2846,2407,5556,4226,Weird outer ring? Moved to 65; totally filled,TRUE,65
+rect_000007,3,3007,2827,5646,4852,"Moved to 90 - awesome, totally filled",TRUE,90
+rect_000008,0,3209,2415,4218,3781,,FALSE,
+rect_000008,1,2789,2421,4209,3675,Moved to 47,TRUE,47
+rect_000008,2,2774,2056,4405,4053,Totally filled,FALSE,
+rect_000008,3,1652,1188,4463,4016,Totally filled,FALSE,
+rect_000009,0,3478,2853,6690,4487,Moved to 15; inside filled,TRUE,15
+rect_000009,1,3429,2520,6825,4759,Inside filled,FALSE,
+rect_000009,2,2785,1889,7278,4958,,FALSE,
+rect_000009,3,2237,1644,7026,4968,Mostly filled,FALSE,
+rect_000010,0,,,3838,3516,Entirely filled -> entire tube,FALSE,
+rect_000010,1,,,3620,3164,Moved to 30,TRUE,30
+rect_000010,2,,,3511,3202,,FALSE,
+rect_000010,3,,,3846,3226,Moved to 76,TRUE,76
+rect_000011,0,,,3219,2564,Another one that is entirely filled. Moved to 8,FALSE,
+rect_000011,1,,,3273,2370,Moved to 35,TRUE,35
+rect_000011,2,,,3509,2880,Moved to 67,TRUE,67
+rect_000011,3,,,3054,2690,Moved to 86,FALSE,
+rect_000012,0,4210,3558,4811,4209,"Moved to 11, filled interior",TRUE,11
+rect_000012,1,4153,3758,5241,4625,"Filled, interior, cut by dolomite, moved to 38",TRUE,38
+rect_000012,2,3493,1976,4852,4438,Moved to 86; partially filled,TRUE,86
+rect_000013,0,3186,1973,3542,2928,Moved to 2,TRUE,2
+rect_000013,1,,,4121,3350,"Moved to 38, boundary inferred, inner filled",TRUE,38
+rect_000013,2,3191,2239,3703,3119,Moved to 83,TRUE,83
+rect_000014,0,3326,3305,6340,4567,,FALSE,
+rect_000014,1,2506,2257,5994,4550,,FALSE,
+rect_000014,2,2665,2142,5260,3837,Moved to 75,TRUE,75
+rect_000014,3,2565,1678,5490,3633,,FALSE,
+rect_000015,0,3953,2897,4766,4280,Moved to 32 - reconstruct this tube?,TRUE,32
+rect_000015,1,3402,1807,5081,4190,Moved to 56,TRUE,56
+rect_000015,2,3225,3220,5193,3825,,FALSE,
+rect_000015,3,3180,1921,4943,3940,,FALSE,
+rect_000016,0,3019,2542,5051,4170,Moved to 25 - is there branching or just two tubes next to each other (likely the latter),TRUE,25
+rect_000016,1,3021,1575,5041,4690,Moved to 45,TRUE,45
+rect_000016,2,2222,2163,5444,4411,Moved to 76,TRUE,76
+rect_000016,3,3009,2493,5220,4399,,FALSE,
+rect_000018,0,2223,1426,3742,2477,"rect_000017 a tube fragment, so not measured. Moved to 27",TRUE,27
+rect_000018,1,2677,2176,4165,2867,Moved to 56,TRUE,56
+rect_000018,2,2323,1866,3954,2922,,FALSE,
+rect_000018,3,2053,1888,4290,3178,Moved to 86,TRUE,86
+rect_000019,0,2617,1273,3830,3447,,FALSE,
+rect_000019,1,2789,2336,3928,3626,Moved to 35,TRUE,35
+rect_000019,2,1555,738,4349,3803,Moved to 56; largely filled,TRUE,56
+rect_000019,3,1485,890,4661,4430,Moved to 88,TRUE,88
+rect_000020,0,2456,1668,3999,2689,,FALSE,
+rect_000020,1,2081,2026,4515,3517,"Filled, moved to 29",TRUE,29
+rect_000020,2,,,4966,4089,Moved to 70 - enlarged? Filled,TRUE,70
+rect_000020,3,,,4710,4176,Moved to 90; filled. Note that ring of shell around fill class,TRUE,90
+rect_000022,0,2843,2154,4032,3538,"skipped rect_000021, not measureable; filled",FALSE,
+rect_000022,1,3498,2021,4125,3121,Inferred; moved to 48,TRUE,48
+rect_000022,2,2725,1912,4078,3193,Moved to 77; partially filled,TRUE,77
+rect_000022,3,3150,958,3994,2780,Moved to 86; partially filled,TRUE,86
+rect_000023,0,2422,1767,3331,3193,,FALSE,
+rect_000023,1,1688,1545,3400,3043,Moved to 35; partially filled,TRUE,35
+rect_000023,2,1811,1137,3377,2936,Moved to 45; partially filled,TRUE,45
+rect_000023,3,,,3027,2530,Moved to 70; totally filled,TRUE,70
+rect_000024,0,2109,308,3834,2182,Partially filled interior,FALSE,
+rect_000024,1,2597,2244,4226,2966,Moved to 54,TRUE,54
+rect_000024,2,2290,1959,4247,3594,Partially filled interior,FALSE,
+rect_000024,3,2229,1922,4095,3524,Partially filled interior,FALSE,
+rect_000026,0,4573,4090,5457,4511,Rect_000025 note measured as it is fragmented in cross section and difficult to reconstruct. Moved to 30. Filled!,TRUE,30
+rect_000026,1,4351,3165,5120,3640,Also filled,FALSE,
+rect_000026,2,3221,3063,4746,3559,Another partially filled,FALSE,
+rect_000026,3,3017,2737,4825,4362,,FALSE,
