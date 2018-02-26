@@ -2,7 +2,7 @@ To use this code, run the following commands:
 
 1. Create a configuration file:
 ```
-	create_config(config_name, image_list, number_pixels, offsets, classes, class_of_interest, original_images, file_prefix, file_ext)
+create_config(config_name, image_list, number_pixels, offsets, classes, class_of_interest, original_images, file_prefix, file_ext);
 ```
 where:
   -	config_name is the configuration name
@@ -15,4 +15,30 @@ where:
   - file_prefix is the prefix before image counters (e.g., 01CT01 is the prefix to 01CT01######.tif)
   - file_ext is the file extension
 
-2. 
+2. Next, provide some training data:
+```
+user_training(configuration_file);
+```
+where:
+  - configuration_file refers to the configuration file produced in step 1. 
+
+3. Now, compile traning stats:
+```
+compile_training_stats(configuration_file);
+```
+where:
+  - configuration_file refers to the configuration file produced in step 1. 
+
+4. Train the network:
+```
+net = train_network(configuration_file);
+```
+where:
+  - configuration_file refers to the configuration file produced in step 1. 
+
+5. Process all images:
+```
+process_all_images(configuration_file);
+```
+where:
+  - configuration_file refers to the configuration file produced in step 1. 
