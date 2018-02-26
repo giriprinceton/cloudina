@@ -2,6 +2,6 @@ This is the data repository for "Multiscale approach reveals that Cloudina aggre
 
 The original article can be found at: https://doi.org/10.1073/pnas.1719911115.
 
-This repository is divided into directories that correspond to figures in the paper.
+This repository is divided into directories that correspond to figures in the paper. All analyses were done in MATLAB versions 2017a and/or 2017b. 
 
 All original image data (.IIQ or .TIF) can be provided on request. 
