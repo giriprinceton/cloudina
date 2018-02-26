@@ -8,7 +8,7 @@ Note, you will need to install the following prerequisites:
 
 Run this code using the following commands:
 
-1. First, process the points shapefile and produce vario_specs, out_points, and classes .mat files. 
+1. First, process the points shapefile and produce the required *vario_specs, out_points, and classes* .mat files. 
 ```
 fit_data('arc_files', 'dried_survey_joined.shp');
 ```
