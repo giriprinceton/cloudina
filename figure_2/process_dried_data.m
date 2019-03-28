@@ -123,14 +123,14 @@ function process_dried_data(directory, location_points, location_contours, locat
     %% GEO FEATURES
     subplot(2, 2, 1);
     % Show the survey points
-    mapshow(data, 'DisplayType','point','Marker','.','MarkerEdgeColor','blue');
+    % mapshow(data, 'DisplayType','point','Marker','.','MarkerEdgeColor','blue');
     % Show the mound traces
     mapshow(dried_mounds, 'DisplayType', 'line', 'Color', 'red');
     % And the reef trace
     mapshow(dried_reef_trace, 'DisplayType', 'line', 'Color', 'black');
     % Print the map out
     print -painters -depsc dried_survey.eps
-
+    return
     %% NUMERIC OUTPUT
     % Total number of points
     point_count = length(comments);
