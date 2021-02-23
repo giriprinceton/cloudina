@@ -19,29 +19,19 @@ where:
 ```
 user_training(configuration_file);
 ```
-where:
-  - configuration_file refers to the configuration file produced in step 1. 
-
 3. Now, compile traning stats:
 ```
 compile_training_stats(configuration_file);
 ```
-where:
-  - configuration_file refers to the configuration file produced in step 1. 
-
 4. Train the network:
 ```
 net = train_network(configuration_file);
 ```
-where:
-  - configuration_file refers to the configuration file produced in step 1. 
-
 5. Process all images:
 ```
 process_all_images(configuration_file);
 ```
-where:
-  - configuration_file refers to the configuration file produced in step 1. 
+Note, `configuration_file` in steps 2 through 5 refers to the configuration file produced in step 1. 
 
 Helper functions include:
 
